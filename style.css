@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+nav {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+section {
+    padding: 4rem 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#project-name .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+#project-name .left {
+    flex: 1;
+    text-align: left;
+}
+
+#project-name .right {
+    flex: 1;
+}
+
+#project-name img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-description {
+    margin-top: 0.5rem;
+}
+
+#description {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#description h2 {
+    margin-bottom: 1rem;
+}
+
+#description p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.github-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.github-button:hover {
+    background-color: #218838;
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.equipment-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 250px;
+    padding: 10px;
+}
+
+.equipment-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.equipment-item h3 {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.equipment-item p {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+    max-width: 90%;
+}
+
+#source-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#code-box {
+    width: 60%;
+    max-width: 600px;
+    height: 300px;
+    border: 1px solid #ddd;
+    overflow-y: scroll;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    text-align: left;
+    font-family: monospace;
+    margin: 1rem 0;
+}
+
+#code-box pre {
+    margin: 0;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.member-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.member-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member-item h3 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.member-info {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .equipment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .member-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .equipment-grid,
+    .member-grid {
+        grid-template-columns: 1fr;
+    }
+}
