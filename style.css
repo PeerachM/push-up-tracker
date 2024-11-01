@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Prompt', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
@@ -201,10 +201,17 @@ h1, h2 {
 }
 
 .member-info {
-    font-family: Arial, sans-serif;
+    font-family: 'Prompt', sans-serif;
     font-size: 1rem;
     color: #333;
     line-height: 1.2;
+}
+
+.member-resp {
+    font-family: 'Prompt', sans-serif;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    color: #333;
 }
 
 @media (max-width: 768px) {
